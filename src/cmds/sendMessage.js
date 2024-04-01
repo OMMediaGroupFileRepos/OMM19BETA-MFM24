@@ -8,8 +8,8 @@ const embeds = require(`../data/embedSettings.json`);
 module.exports = {
     category: "general",
     data: new SlashCommandBuilder()
-        .setName(l.suggest)
-        .setDescription(l.suggestDesc)
+        .setName("message")
+        .setDescription("send an message.")
         .addStringOption(option =>
             option.setName(`${l.suggestOptionOne}`)
                 .setDescription(`${l.suggestMsgDesc}`)
