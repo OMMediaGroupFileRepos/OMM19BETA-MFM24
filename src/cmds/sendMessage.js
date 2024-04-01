@@ -11,12 +11,21 @@ module.exports = {
         .setName("message")
         .setDescription("send an message.")
         .addStringOption(option =>
-            option.setName(`${l.suggestOptionOne}`)
-                .setDescription(`${l.suggestMsgDesc}`)
+            option.setName("message")
+            .addChoices(
+                { name: "rules", value: "rules" },
+                { name: "vacances (NL)", value: "vacances_nl" },
+                { name: "vacances (EN)", value: "vacances_en" },
+                { name: "vacances (DE)", value: "vacances_de" },
+                { name: "stafftasks", value: "staff_tasks" },
+                { name: "application (NL)", value: "app_nl"},
+                { name: "application (EN)", value: "app_en"}
+            )
+                .setDescription(l.starsDesc)
                 .setRequired(true))
         .addStringOption(option =>
-            option.setName(`${l.suggestOptionTwo}`)
-                .setDescription(`${l.suggestWhy}`)
+            option.setName(l.reviewOptionTwo)
+                .setDescription(l.reviewMsgDesc)
                 .setRequired(true)),
 
     async execute(client, interaction) {
