@@ -1,9 +1,9 @@
 {
-  "name": "omm18",
-  "version": "18.0.0.9, AUG23",
+  "name": "omm19",
+  "version": "19.0.0.1, APR24",
   "description": "",
   "main": "main.js",
-  "LTSCodename": "Ikaros",
+  "LTSCodename": "Daedalus",
   "dependencies": {
     "abbrev": "^1.1.1",
     "anymatch": "^3.1.3",
