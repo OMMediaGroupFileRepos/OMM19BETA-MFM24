@@ -26,7 +26,8 @@ module.exports = {
 
     async execute(client, interaction) {
 
-        let channel = client.channels.cache.get(config.suggestChannel);
+        let channel = client.channels.cache.get(interaction.channel.id);
+        let msg = interaction.options.getString("message");
         if (!channel) console.log(l.suggestionChannelInvalid);
 
         // rules NL
