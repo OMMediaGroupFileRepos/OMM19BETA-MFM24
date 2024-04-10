@@ -15,14 +15,6 @@ module.exports = {
             option.setName(l.updateLogsSelect)
             .addChoices(
                 { name: "Latest", value: "lat" },
-                { name: "8th", value: "g" },
-                { name: "7th", value: "f" },
-                { name: "6th", value: "e" },
-                { name: "5th", value: "d" },
-                { name: "4th", value: "c" },
-                { name: "3th", value: "b" },
-                { name: "2nd", value: "a" },
-                { name: "1st", value: "first" },
             )
                 .setDescription(l.starsDesc)
                 .setRequired(true)),
@@ -34,7 +26,7 @@ module.exports = {
 
         let latest = new EmbedBuilder()
             .setTitle("Latest update (" + pkg.version + ")")
-            .setDescription("**__What's new?__**\n\n```diff\n/config\n```\n\n** **")
+            .setDescription("**__What's new?__**\n\n```diff\n+ Added /message\n+ Version has been updated to 19.0.0.1 codenamed Daedalus as continuation of the previously released v18, codenamed Icarus (Ikaros in original versions).\n```\n\n** **")
             .setFooter({ text: config.footer })
             .setColor(embeds.color.updateLogs)
             .setTimestamp()
