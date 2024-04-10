@@ -6,15 +6,14 @@ const pkg = require("./package.json");
 const embeds = require(`./src/data/embedSettings.json`);
 
 const config = require("./src/data/config.json");
-const clientData = require("../data/clients.json");
-const { state } = require("./src/cmds/8ball");
+//const { state } = require("./src/cmds/8ball");
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMembers, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildPresences, GatewayIntentBits.GuildVoiceStates, GatewayIntentBits.MessageContent] });
 client.commands = new Collection();
 const cmds = [];
 
-let clientName = config.client;
-var token = clientData[clientName].login;
+//let clientName = config.client;
+var token = config.login;
 
 var langConf = config.lang;
 const l = require(`./src/lang/${langConf}.json`);
