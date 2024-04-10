@@ -82,7 +82,7 @@ module.exports = {
                     name: "Neem het onderstaande bericht over:", value: `
 \`\`\`
 - Wat is uw aanspreeknaam?
-- Mag uw aanspreeknaam zichtbaar zijn in uw nickname?
+- Mag uw aanspreeknaam zichtbaar zijn in uw nickname? Zo niet, welke naam dan wel? (Duidelijke aanspreeknaam)
 - Voor welke vacature wilt u solliciteren?
 - Heeft u al ervaring(en)? Zo niet, laat leeg.
 - Wat voor en hoeveel motivatie heeft u voor deze functie?
