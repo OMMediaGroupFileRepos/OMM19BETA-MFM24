@@ -1,5 +1,6 @@
 {
     "client": "test",
+    "login": "token",
     "id": "clientid",
     "guild": "id",
     "footer": "2015-2023 | OfficieelMika",
