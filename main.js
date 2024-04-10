@@ -54,7 +54,7 @@ client.on("interactionCreate", async interaction => {
 
     const command = client.commands.get(interaction.commandName)
 
-    if(client.commands.get(state) == "disabled") return;
+    //if(client.commands.get(state) == "disabled") return;
     if(!command) return;
 
     try {
