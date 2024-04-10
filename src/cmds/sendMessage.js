@@ -81,15 +81,15 @@ module.exports = {
                 {
                     name: "Neem het onderstaande bericht over:", value: `
                 \`\`\`
-                - Wat is uw aanspreeknaam?
-                - Mag uw aanspreeknaam zichtbaar zijn in uw nickname?
-                - Voor welke vacature wilt u solliciteren?
-                - Heeft u al ervaring(en)? Zo niet, laat leeg.
-                - Wat voor en hoeveel motivatie heeft u voor deze functie?
-                - Overweegt u een tweede functie buiten uw eerste?
-                - Heeft u aan andere projecten meegeholpen? Zo niet, laat leeg.
+- Wat is uw aanspreeknaam?
+- Mag uw aanspreeknaam zichtbaar zijn in uw nickname?
+- Voor welke vacature wilt u solliciteren?
+- Heeft u al ervaring(en)? Zo niet, laat leeg.
+- Wat voor en hoeveel motivatie heeft u voor deze functie?
+- Overweegt u een tweede functie buiten uw eerste?
+- Heeft u aan andere projecten meegeholpen? Zo niet, laat leeg.
                 \`\`\`
-                \n\n### Bedankt voor uw bijdrage!
+### Bedankt voor uw bijdrage!
             `}
             )
             .setFooter({ text: config.footer })
