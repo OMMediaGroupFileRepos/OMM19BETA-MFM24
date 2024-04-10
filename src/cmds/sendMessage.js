@@ -33,8 +33,8 @@ module.exports = {
         // rules NL
 
         let rules = new EmbedBuilder()
-            .setTitle(`MikaFM Community Regels`)
-            .setDescription(`Welkom bij de MikaFM Discord Server! Hier zijn onze communityregels om ervoor te zorgen dat iedereen een plezierige ervaring heeft en respectvol met elkaar omgaat.`)
+            .setTitle(`__Communityregels MikaFM__`)
+            .setDescription(`Welkom bij de MikaFM Discord Server! Wij willen je vragen onze communityregels na te leven om voor een veilige en prettige ervaring te zorgen.`)
             .addFields(
                 {
                     name: "Algemeen", value: `
@@ -68,7 +68,7 @@ module.exports = {
                 • Meld overtredingen van de regels bij de moderatoren.
             `}
             )
-            .setFooter({ text: `© MikaFM Discord Server | Laatst bijgewerkt: 3-4-2024` })
+            .setFooter({ text: config.footer + ` | Laatst bijgewerkt: 10-4-2024` })
             .setColor(embeds.color.default)
             .setTimestamp();
 
