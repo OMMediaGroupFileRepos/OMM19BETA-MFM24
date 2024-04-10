@@ -75,10 +75,19 @@ module.exports = {
         // vacancies NL
 
         let vacNL = new EmbedBuilder()
-            .setTitle(`Door ${interaction.user.username}`)
-            .setDescription("test12345")
+            .setTitle(`Sollicitatie`)
+            .setDescription("Welkom bij MikaFM, bedankt voor uw aandacht in onze vacatures, wij willen vermelden dat deze posities vrijwillig zijn en er geen hoge werkdruk te verwachten is.")
             .addFields(
-                { name: "test", value: "test123" }
+                {
+                    name: "Neem het onderstaande bericht over:", value: `
+                \`\`\`- Wat is uw aanspreeknaam?
+                - Mag uw aanspreeknaam zichtbaar zijn in uw nickname?
+                - Voor welke vacature wilt u solliciteren?
+                - Heeft u al ervaring(en)? Zo niet, laat leeg.
+                - Wat voor en hoeveel motivatie heeft u voor deze functie?
+                - Overweegt u een tweede functie buiten uw eerste?
+                - Heeft u aan andere projecten meegeholpen? Zo niet, laat leeg.\`\`\`\n\n###Bedankt voor uw bijdrage!
+            `}
             )
             .setFooter({ text: config.footer })
             .setColor(embeds.color.suggestion)
